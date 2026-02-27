@@ -1,7 +1,7 @@
-# QUARTET.jl
+# LatBench.jl
 
 ## Models
 
 ```@autodocs
-Modules = [QUARTET]
+Modules = [LatBench]
 ```

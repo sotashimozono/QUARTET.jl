@@ -1,6 +1,6 @@
-# Contributing to QUARTET.jl
+# Contributing to LatBench.jl
 
-Thank you for your interest in QUARTET! We welcome contributions to improve this reference database.
+Thank you for your interest in LatBench! We welcome contributions to improve this reference database.
 
 ## Design Philosophy
 
