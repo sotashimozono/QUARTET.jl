@@ -38,6 +38,13 @@ Quantity(q::String) = Quantity(Symbol(q))
 Fetch the value of a quantity for a given model and boundary condition.
 each implementation of `fetch` should be specific to the model and quantity being calculated, and may require additional parameters passed through `kwargs`.
 """
+function fetch(
+    model::AbstractModel, quantity::AbstractQuantity, bc::BoundaryCondition; kwargs...
+)
+    return error(
+        "QUARTET: No implementation found for Model{$(typeof(model).parameters[1])}, Quantity{$(typeof(quantity).parameters[1])} under $(typeof(bc)) condition.",
+    )
+end
 function fetch(m::Symbol, q::Symbol, bc::BoundaryCondition=Infinite(); kwargs...)
     return fetch(Model(m; kwargs...), Quantity(q), bc)
 end
