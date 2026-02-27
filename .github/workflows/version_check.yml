@@ -15,4 +15,5 @@ jobs:
       - name: Check version change
         shell: julia --color=yes {0}
         run: |
-          include(".github/scripts/version_check.jl")
+          path = joinpath(pwd(), ".github", "scripts", "version_check.jl")
+          include(path)
