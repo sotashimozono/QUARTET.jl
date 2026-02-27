@@ -12,9 +12,7 @@ using Test
     )
         return m.params[:val] * 2
     end
-    function QAtlas.fetch(
-        ::QAtlas.Model{:Dummy}, ::QAtlas.Quantity{:Answer}, ::QAtlas.OBC
-    )
+    function QAtlas.fetch(::QAtlas.Model{:Dummy}, ::QAtlas.Quantity{:Answer}, ::QAtlas.OBC)
         return "Open Boundary"
     end
 
