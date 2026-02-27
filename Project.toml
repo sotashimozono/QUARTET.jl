@@ -1,4 +1,4 @@
-name = "QUARTET"
+name = "QAtlas"
 uuid = "2bd488d2-d3e6-46ee-afb3-5515643db0c7"
 version = "0.1.0"
 authors = ["sota shimozono <shimozono-sota631@g.ecc.u-tokyo.ac.jp>"]
@@ -7,6 +7,7 @@ authors = ["sota shimozono <shimozono-sota631@g.ecc.u-tokyo.ac.jp>"]
 QuadGK = "1fd47b50-473d-5c70-9696-f719f8f3bcdc"
 
 [compat]
+julia = "1.10"
 QuadGK = "2.11.2"
 
 [extras]

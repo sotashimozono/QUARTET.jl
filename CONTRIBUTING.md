@@ -1,6 +1,6 @@
-# Contributing to QUARTET.jl
+# Contributing to QAtlas.jl
 
-Thank you for your interest in QUARTET! We welcome contributions to improve this reference database.
+Thank you for your interest in QAtlas! We welcome contributions to improve this reference database.
 
 ## Design Philosophy
 

@@ -1,4 +1,4 @@
-using QUARTET
+using QAtlas
 using Documenter
 using Downloads
 
@@ -11,9 +11,9 @@ Downloads.download("https://github.com/sotashimozono.png", favicon_path)
 Downloads.download("https://github.com/sotashimozono.png", logo_path)
 
 makedocs(;
-    sitename="QUARTET.jl",
+    sitename="QAtlas.jl",
     format=Documenter.HTML(;
-        canonical="https://codes.sota-shimozono.com/QUARTET.jl/stable/",
+        canonical="https://codes.sota-shimozono.com/QAtlas.jl/stable/",
         prettyurls=get(ENV, "CI", "false") == "true",
         mathengine=MathJax3(
             Dict(
@@ -26,8 +26,8 @@ makedocs(;
         ),
         assets=["assets/favicon.ico", "assets/custom.css"],
     ),
-    modules=[QUARTET],
+    modules=[QAtlas],
     pages=["Home" => "index.md"],
 )
 
-deploydocs(; repo="github.com/sotashimozono/QUARTET.jl.git", devbranch="main")
+deploydocs(; repo="github.com/sotashimozono/QAtlas.jl.git", devbranch="main")

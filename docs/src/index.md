@@ -1,7 +1,7 @@
-# QUARTET.jl
+# QAtlas.jl
 
 ## Models
 
 ```@autodocs
-Modules = [QUARTET]
+Modules = [QAtlas]
 ```

@@ -47,7 +47,7 @@ function fetch(
     model::AbstractModel, quantity::AbstractQuantity, bc::BoundaryCondition; kwargs...
 )
     return error(
-        "QUARTET: No implementation found for Model{$(typeof(model).parameters[1])}, Quantity{$(typeof(quantity).parameters[1])} under $(typeof(bc)) condition.",
+        "QAtlas: No implementation found for Model{$(typeof(model).parameters[1])}, Quantity{$(typeof(quantity).parameters[1])} under $(typeof(bc)) condition.",
     )
 end
 function fetch(m::Symbol, q::Symbol, bc::BoundaryCondition=Infinite(); kwargs...)
