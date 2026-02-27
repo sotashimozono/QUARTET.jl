@@ -10,9 +10,9 @@ include("core/alias.jl")
 include("core/type.jl")
 
 # --- Universality Classes ---
-include("universality/E8.jl")
+include("universalities/E8.jl")
 
 # --- Models ---
-include("model/TFIM.jl")
+include("models/TFIM.jl")
 
 end # module QUARTET

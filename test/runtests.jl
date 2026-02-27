@@ -1,7 +1,7 @@
 ENV["GKSwstype"] = "100"
 
 using QUARTET, Test
-const dirs = ["core/", "universality/"]
+const dirs = ["core/", "universalities/"]
 
 const FIG_BASE = joinpath(pkgdir(QUARTET), "docs", "src", "assets")
 const PATHS = Dict()
