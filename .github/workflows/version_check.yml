@@ -1,0 +1,17 @@
+name: Project Check
+on:
+  pull_request:
+    paths:
+      - 'Project.toml'
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: julia-actions/setup-julia@v2
+      - name: Check version change
+        shell: julia --color=yes {0}
+        run: |
+          # メインブランチの Project.toml と比較してバージョンが上がっているか確認する
+          # (簡易的なチェック用スクリプト、または専用のアクションを使用)
