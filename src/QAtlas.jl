@@ -1,4 +1,4 @@
-module LatBench
+module QAtlas
 
 export AbstractModel, Model
 export BoundaryCondition, Infinite, PBC, OBC
@@ -15,4 +15,4 @@ include("universalities/E8.jl")
 # --- Models ---
 include("models/TFIM.jl")
 
-end # module LatBench
+end # module QAtlas

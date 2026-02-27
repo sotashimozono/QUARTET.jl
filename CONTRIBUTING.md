@@ -1,6 +1,6 @@
-# Contributing to LatBench.jl
+# Contributing to QAtlas.jl
 
-Thank you for your interest in LatBench! We welcome contributions to improve this reference database.
+Thank you for your interest in QAtlas! We welcome contributions to improve this reference database.
 
 ## Design Philosophy
 

@@ -1,9 +1,9 @@
 ENV["GKSwstype"] = "100"
 
-using LatBench, Test
+using QAtlas, Test
 const dirs = ["core/", "universalities/"]
 
-const FIG_BASE = joinpath(pkgdir(LatBench), "docs", "src", "assets")
+const FIG_BASE = joinpath(pkgdir(QAtlas), "docs", "src", "assets")
 const PATHS = Dict()
 mkpath.(values(PATHS))
 

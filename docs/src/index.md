@@ -1,7 +1,7 @@
-# LatBench.jl
+# QAtlas.jl
 
 ## Models
 
 ```@autodocs
-Modules = [LatBench]
+Modules = [QAtlas]
 ```

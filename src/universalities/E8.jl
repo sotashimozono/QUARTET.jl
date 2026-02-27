@@ -34,6 +34,6 @@ end
     fetch(Model(:E8), Quantity(:E8_spectrum), Infinite())
 Returns the analytical E8 mass spectrum.
 """
-function LatBench.fetch(::Model{:E8}, ::Quantity{:E8_spectrum}, ::Infinite; kwargs...)
+function QAtlas.fetch(::Model{:E8}, ::Quantity{:E8_spectrum}, ::Infinite; kwargs...)
     return get_e8_mass_ratios()
 end
