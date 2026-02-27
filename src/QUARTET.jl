@@ -5,6 +5,7 @@ module QUARTET
 # export AbstractQuantity, Quantity
 # export fetch
 
+include("core/alias.jl")
 include("core/type.jl")
 
 end # module QUARTET

@@ -10,8 +10,10 @@ abstract type AbstractModel end
 struct Model{M} <: AbstractModel
     params::Dict{Symbol,Any}
 end
-Model(name::Symbol; kwargs...) = Model{name}(Dict{Symbol,Any}(kwargs))
-
+function Model(name::Symbol; kwargs...)
+    canon = canonicalize_model(Val(name))
+    return Model{canon}(Dict{Symbol,Any}(kwargs))
+end
 """
     AbstractBoundaryCondition
 Struct for defining the boundary conditions of the system. Available options include:
@@ -30,8 +32,11 @@ struct OBC <: BoundaryCondition end
 abstract type AbstractQuantity end
 
 struct Quantity{Q} <: AbstractQuantity end
-Quantity(q::Symbol) = Quantity{q}()
-Quantity(q::String) = Quantity(Symbol(q))
+function Quantity(q::Symbol)
+    canon = canonicalize_quantity(Val(q))
+    return Quantity{canon}()
+end
+Quantity(q::AbstractString) = Quantity(Symbol(q))
 
 """
     function fetch(model::AbstractModel, quantity::AbstractQuantity; kwargs...)
