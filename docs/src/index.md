@@ -1,7 +1,7 @@
-# MyModule.jl
+# QUARTET.jl
 
 ## Models
 
 ```@autodocs
-Modules = [MyModule]
+Modules = [QUARTET]
 ```
